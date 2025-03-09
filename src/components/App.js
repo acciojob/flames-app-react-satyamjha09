@@ -84,9 +84,8 @@ class App extends Component {
           Clear
         </button>
 
-        {this.state.result && (
-          <h3 data-testid="answer">{this.state.result}</h3>
-        )}
+        {/* Ensure h3 always exists for Cypress tests */}
+        <h3 data-testid="answer">{this.state.result}</h3>
       </div>
     );
   }
